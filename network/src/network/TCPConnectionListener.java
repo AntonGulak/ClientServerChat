@@ -1,6 +1,6 @@
 package network;
 
-public class TCPConnectionListener {
+public interface TCPConnectionListener {
 
     //Соединение готово к работе
     void onConnectionReady(TCPConnection tcpConnection);
