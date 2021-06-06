@@ -45,7 +45,7 @@ public class ChatServer implements TCPConnectionListener {
     }
 
     @Override
-    public synchronized void onRecitveString(TCPConnection tcpConnection, String value) {
+    public synchronized void onRecieveString(TCPConnection tcpConnection, String value) {
         sendToAllConnection(value);
     }
 

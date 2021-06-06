@@ -45,7 +45,7 @@ public class TCPConnection {
                     eventListener.onConnectionReady(TCPConnection.this);
                     while (!rxThread.isInterrupted()) {
                         String msg = in.readLine();
-                        eventListener.onRecitveString(TCPConnection.this,msg);
+                        eventListener.onRecieveString(TCPConnection.this,msg);
                     }
                 } catch (IOException e) {
                     eventListener.onException(TCPConnection.this,e);
