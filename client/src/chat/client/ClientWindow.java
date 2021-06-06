@@ -72,7 +72,7 @@ public class ClientWindow extends JFrame implements ActionListener, TCPConnectio
     }
 
     @Override
-    public void onRecieveString(TCPConnection tcpConnection, String value) {
+    public void onReceiveString(TCPConnection tcpConnection, String value) {
         printMsg(value);
 
     }
